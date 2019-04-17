@@ -11,7 +11,7 @@ namespace myOwn{
 class Goods{
  public:
  
-  Goods() : goods_index_(0), goods_price_(0)
+  Goods();
   void SetGoodsInfo(int index, int price);
   int GetIndex();
   int GetPrice();
