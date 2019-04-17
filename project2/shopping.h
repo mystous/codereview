@@ -4,6 +4,8 @@
 #include <vector>
 #include "./goods.h"
 
+namespace myOwn{
+ 
 // Shopping class presents List of shopping.
 // Example:
 //     Shopping tobuylist;
@@ -25,4 +27,5 @@ class Shopping{
   std::vector<Goods> shopping_list_;
 };
 
+}
 #endif  // SHOPPING_H_
