@@ -1,5 +1,10 @@
 #include "./goods.h"
 
+namespace myOwn{
+  
+Goods::Goods() : goods_index_(0), goods_price_(0){
+}
+  
 // Set member variable of goods with given index and price values
 void Goods::SetGoodsInfo(int index, int price) {
   goods_index_ = index;
@@ -14,4 +19,6 @@ int Goods::GetIndex() {
 // Return price informaiton
 int Goods::GetPrice() {
   return goods_price_;
+}
+
 }
