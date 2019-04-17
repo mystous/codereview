@@ -1,6 +1,8 @@
 #include <iostream>
 #include "./shopping.h"
 
+namespace myOwn{
+  
 // Push Goods object to shopping_list_ vector
 void Shopping::PushList(Goods object) {
   shopping_list_.push_back(object);
@@ -60,4 +62,6 @@ void Shopping::SortByIndex() {
     std::iter_swap(i, min);
     min = shopping_list_.end();
   }
+}
+
 }
